@@ -1,5 +1,5 @@
 module.exports = {
-	plugins: [require("prettier-plugin-packagejson"), require("prettier-plugin-organize-imports")],
+	plugins: [require.resolve("prettier-plugin-packagejson"), require.resolve("prettier-plugin-organize-imports")],
 	pluginSearchDirs: false,
 	printWidth: 120,
 	trailingComma: "all",
