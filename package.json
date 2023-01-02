@@ -1,0 +1,44 @@
+{
+	"name": "@mozisan/prettier-config",
+	"version": "0.0.0",
+	"homepage": "https://github.com/mozisan/prettier-config#readme",
+	"bugs": {
+		"url": "https://github.com/mozisan/prettier-config/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/mozisan/prettier-config.git"
+	},
+	"license": "MIT",
+	"author": "mozisan",
+	"exports": {
+		".": "./src/main.js",
+		"./react": "./src/react.js"
+	},
+	"main": "index.js",
+	"files": [
+		"src",
+		"package.json"
+	],
+	"scripts": {
+		"prepare": "husky install"
+	},
+	"prettier": "./src/main.js",
+	"devDependencies": {
+		"husky": "^8.0.2",
+		"lint-staged": "^13.1.0",
+		"prettier": "^2.8.1",
+		"prettier-plugin-organize-imports": "^3.2.1",
+		"prettier-plugin-packagejson": "^2.3.0",
+		"prettier-plugin-tailwindcss": "^0.2.1",
+		"typescript": "^4.9.4"
+	},
+	"peerDependencies": {
+		"prettier": "^2.8.1",
+		"typescript": "^4.9.4"
+	},
+	"packageManager": "pnpm@7.21.0",
+	"publishConfig": {
+		"access": "public"
+	}
+}
