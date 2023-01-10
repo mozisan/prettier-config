@@ -12,18 +12,19 @@
 	"license": "MIT",
 	"author": "mozisan",
 	"exports": {
-		".": "./src/main.js",
-		"./react": "./src/react.js"
+		".": "./lib/general.js",
+		"./react": "./lib/react.js",
+		"./typescript": "./lib/typescript.js"
 	},
-	"main": "index.js",
+	"main": "./lib/general.js",
 	"files": [
-		"src",
+		"lib",
 		"package.json"
 	],
 	"scripts": {
 		"prepare": "husky install"
 	},
-	"prettier": "./src/main.js",
+	"prettier": "./lib/general.js",
 	"dependencies": {
 		"prettier-plugin-organize-imports": "^3.2.1",
 		"prettier-plugin-packagejson": "^2.3.0",
@@ -38,6 +39,11 @@
 	"peerDependencies": {
 		"prettier": "^2.8.1",
 		"typescript": "^4.9.4"
+	},
+	"peerDependenciesMeta": {
+		"typescript": {
+			"optional": true
+		}
 	},
 	"packageManager": "pnpm@7.21.0",
 	"publishConfig": {
