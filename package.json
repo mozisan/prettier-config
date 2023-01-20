@@ -13,7 +13,7 @@
 	"author": "mozisan",
 	"exports": {
 		".": "./lib/general.js",
-		"./react": "./lib/react.js",
+		"./tailwindcss": "./lib/tailwindcss.js",
 		"./typescript": "./lib/typescript.js"
 	},
 	"main": "./lib/general.js",
