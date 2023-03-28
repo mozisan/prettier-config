@@ -25,17 +25,17 @@
 	},
 	"prettier": "./lib/general.js",
 	"dependencies": {
-		"prettier-plugin-packagejson": "^2.3.0",
-		"prettier-plugin-tailwindcss": "^0.2.1"
+		"prettier-plugin-packagejson": "^2.4.3",
+		"prettier-plugin-tailwindcss": "^0.2.5"
 	},
 	"devDependencies": {
-		"husky": "^8.0.2",
-		"lint-staged": "^13.1.0",
-		"prettier": "^2.8.1",
-		"typescript": "^4.9.4"
+		"husky": "^8.0.3",
+		"lint-staged": "^13.2.0",
+		"prettier": "^2.8.7",
+		"typescript": "^5.0.2"
 	},
 	"peerDependencies": {
-		"prettier": "^2.8.1",
+		"prettier": "^2.8.7",
 		"typescript": "^5 || ^4"
 	},
 	"peerDependenciesMeta": {
