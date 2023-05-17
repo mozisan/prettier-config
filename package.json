@@ -26,13 +26,13 @@
 	"prettier": "./lib/general.js",
 	"dependencies": {
 		"prettier-plugin-packagejson": "^2.4.3",
-		"prettier-plugin-tailwindcss": "^0.2.5"
+		"prettier-plugin-tailwindcss": "^0.3.0"
 	},
 	"devDependencies": {
 		"husky": "^8.0.3",
-		"lint-staged": "^13.2.0",
-		"prettier": "^2.8.7",
-		"typescript": "^5.0.2"
+		"lint-staged": "^13.2.2",
+		"prettier": "^2.8.8",
+		"typescript": "^5.0.4"
 	},
 	"peerDependencies": {
 		"prettier": "^2.8.7",
@@ -43,7 +43,7 @@
 			"optional": true
 		}
 	},
-	"packageManager": "pnpm@7.21.0",
+	"packageManager": "pnpm@8.5.1",
 	"publishConfig": {
 		"access": "public"
 	}
