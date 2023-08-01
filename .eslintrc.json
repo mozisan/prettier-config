@@ -1,4 +1,4 @@
 {
 	"root": true,
-	"extends": ["plugin:@mozisan/cjs-modern"]
+	"extends": ["plugin:@mozisan/esm"]
 }
