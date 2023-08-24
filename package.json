@@ -41,24 +41,24 @@
 	"prettier": "./dist/esm/default.js",
 	"dependencies": {
 		"prettier-plugin-packagejson": "^2.4.5",
-		"prettier-plugin-tailwindcss": "^0.4.1"
+		"prettier-plugin-tailwindcss": "^0.5.3"
 	},
 	"devDependencies": {
-		"@mozisan/eslint-plugin": "^2.0.0",
-		"@tsconfig/node18": "^18.2.0",
+		"@mozisan/eslint-plugin": "^2.2.3",
+		"@tsconfig/node18": "^18.2.1",
 		"@tsconfig/strictest": "^2.0.1",
-		"eslint": "^8.46.0",
+		"eslint": "^8.47.0",
 		"husky": "^8.0.3",
-		"lint-staged": "^13.2.3",
+		"lint-staged": "^14.0.1",
 		"npm-run-all": "^4.1.5",
-		"prettier": "^3.0.0",
-		"tsup": "^7.1.0",
-		"typescript": "^5.1.6"
+		"prettier": "^3.0.2",
+		"tsup": "^7.2.0",
+		"typescript": "^5.2.2"
 	},
 	"peerDependencies": {
 		"prettier": "^3"
 	},
-	"packageManager": "pnpm@8.6.11",
+	"packageManager": "pnpm@8.6.12",
 	"publishConfig": {
 		"access": "public"
 	}
