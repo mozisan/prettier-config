@@ -1,65 +1,67 @@
 {
-	"name": "@mozisan/prettier-config",
-	"version": "3.0.0",
-	"homepage": "https://github.com/mozisan/prettier-config#readme",
-	"bugs": {
-		"url": "https://github.com/mozisan/prettier-config/issues"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/mozisan/prettier-config.git"
-	},
-	"license": "MIT",
-	"author": "mozisan",
-	"type": "module",
-	"exports": {
-		".": {
-			"import": "./dist/esm/default.js",
-			"require": "./dist/cjs/default.cjs"
-		},
-		"./tailwindcss": {
-			"import": "./dist/esm/tailwindcss.js",
-			"require": "./dist/cjs/tailwindcss.cjs"
-		}
-	},
-	"main": "./dist/esm/default.cjs",
-	"module": "./dist/esm/default.js",
-	"files": [
-		"dist",
-		"package.json"
-	],
-	"scripts": {
-		"prepare": "husky install",
-		"build": "tsup",
-		"fix": "run-s fix:eslint fix:prettier",
-		"fix:eslint": "eslint --fix .",
-		"fix:prettier": "prettier --write --log-level=warn .",
-		"lint": "run-s lint:eslint lint:prettier",
-		"lint:eslint": "eslint .",
-		"lint:prettier": "prettier --check --log-level=warn ."
-	},
-	"prettier": "./dist/esm/default.js",
-	"dependencies": {
-		"prettier-plugin-packagejson": "^2.4.5",
-		"prettier-plugin-tailwindcss": "^0.5.3"
-	},
-	"devDependencies": {
-		"@mozisan/eslint-plugin": "^2.2.3",
-		"@tsconfig/node18": "^18.2.1",
-		"@tsconfig/strictest": "^2.0.1",
-		"eslint": "^8.47.0",
-		"husky": "^8.0.3",
-		"lint-staged": "^14.0.1",
-		"npm-run-all": "^4.1.5",
-		"prettier": "^3.0.2",
-		"tsup": "^7.2.0",
-		"typescript": "^5.2.2"
-	},
-	"peerDependencies": {
-		"prettier": "^3"
-	},
-	"packageManager": "pnpm@8.6.12",
-	"publishConfig": {
-		"access": "public"
-	}
+  "name": "@mozisan/prettier-config",
+  "version": "3.0.0",
+  "homepage": "https://github.com/mozisan/prettier-config#readme",
+  "bugs": {
+    "url": "https://github.com/mozisan/prettier-config/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mozisan/prettier-config.git"
+  },
+  "license": "MIT",
+  "author": "mozisan",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/default.js",
+      "require": "./dist/default.cjs"
+    },
+    "./tailwindcss": {
+      "import": "./dist/tailwindcss.js",
+      "require": "./dist/tailwindcss.cjs"
+    }
+  },
+  "main": "./dist/default.cjs",
+  "module": "./dist/default.js",
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "scripts": {
+    "prepare": "husky install",
+    "build": "tsup",
+    "fix": "run-s fix:eslint fix:prettier",
+    "fix:eslint": "eslint --fix .",
+    "fix:prettier": "prettier --write --log-level=warn .",
+    "lint": "run-s lint:eslint lint:prettier",
+    "lint:eslint": "eslint .",
+    "lint:prettier": "prettier --check --log-level=warn ."
+  },
+  "prettier": "./dist/default.js",
+  "dependencies": {
+    "prettier-plugin-packagejson": "^2.4.12",
+    "prettier-plugin-tailwindcss": "^0.5.12"
+  },
+  "devDependencies": {
+    "@mozisan/eslint-plugin": "^2.3.0",
+    "@touchspot/eslint-plugin": "^1.0.0",
+    "@tsconfig/node20": "^20.1.2",
+    "@tsconfig/strictest": "^2.0.3",
+    "eslint": "^8.57.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "npm-run-all2": "^6.1.2",
+    "pkgroll": "^2.0.2",
+    "prettier": "^3.2.5",
+    "prettier-plugin-toml": "^2.0.1",
+    "typescript": "^5.4.2"
+  },
+  "peerDependencies": {
+    "prettier": "^3"
+  },
+  "packageManager": "pnpm@8.15.5",
+  "publishConfig": {
+    "access": "public"
+  }
 }
